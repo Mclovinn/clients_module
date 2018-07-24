@@ -1,0 +1,1 @@
+require('./controllers/client.controller.test.js');

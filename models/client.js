@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema,
-      ObjectId = Schema.ObjectId;
+      ObjectId = Schema.ObjectId
 const Provider = require('./provider.js')
 
 const ClientSchema = Schema({
@@ -16,11 +16,11 @@ const ClientSchema = Schema({
     phone: {
         type: String,
     },
-    providers: [
-        Provider
-    ]
-});
+    // providers: [
+    //     Provider
+    // ]
+})
 
-const ClientModel = mongoose.model('Client', ClientSchema);
+const ClientModel = mongoose.model('Client', ClientSchema)
 
-module.exports = ClientModel;
+module.exports = ClientModel
